@@ -1,0 +1,180 @@
+{
+    "type": "PlayerInventoryPanel", "name": "hudminihm",
+    "fields": {
+        "priority": -100,
+        "anchor": { "x": 0.5, "y": 0.5 },
+        "rect": { "x": 0, "y": 0, },
+        "isVisible": true,
+    },
+    "children": [
+        {
+        "type": "ButtonWidget", "name": "Close",
+        "fields": {
+           "rect": { "x": 0, "y": 2500 }, // 안보이게 내려버렸음
+           "filename": "PANEL\\closebtn_4x",
+           "onClickMessage": "PanelManager:ClosePanel:hudminihm",
+           "acceptsEscKeyEverywhere": false
+            },
+        },
+        {
+        "type": "ImageWidget", "name": "background_right_arm_selected",
+        "fields": {
+            "rect": { "x": 178, "y": -473, "scale": 0.5 }, // 负数向左스왑표시, 이동시키려면 아래 값과 동일한 좌표로 이동//交换指示器，要移动，请移动到与下方值相同的坐标。
+            "filename": "PANEL/HUD_02/minibar/swapwp",
+            },
+        },
+        {
+        "type": "ImageWidget", "name": "background_right_arm",
+        "fields": {
+            "rect": { "x": 178, "y": -473, "scale": 0.5 }, // 스왑표시, 이동시키려면 위 값과 동일한 좌표로 이동//交换指示器，要移动，请移动到与上方值相同的坐标。
+            "filename": "PANEL/HUD_02/minibar/swapwp",
+            "frame": 1,
+            },
+        },
+
+
+
+        // 미니 HUD
+        {
+        "type": "Widget", "name": "heal_mana_arrow",
+        "fields": {
+            "anchor": { "x": 0.5, "y": 0 },
+            "rect": { "x": -230, "y": -430 }, // mini HUD 위치 이동은 이 부분을 수정하세요//请修改此部分以移动迷你HUD的位置。
+            },
+            "children": [
+                {
+                "type": "ImageWidget", "name": "miniHbg",
+                "fields": {				
+                    "rect": { "x": 0, "y": 0, "scale": 1.0 },
+                    "filename": "PANEL/HUD_02/minibar/minibar_h_bg",
+                    }
+                },
+                {
+                "type": "AttributeBallWidget", "name": "miniH",
+                "fields": {
+                    "rect": { "x": 0, "y": 1, "width": 150, "height": 116, "scale": 1.0 },
+                    "attribute": "health",
+                    "minLiquidWidth": 2,
+                    "maxSmoothingSeconds": 1.0,
+                    "jumpSmoothingSeconds": 0.25,
+                    "smoothDecrease": false,
+                    "potionPreviewTransparency": 0.35,
+                    "poisonHsvTransform": [ 0.3, 0.0, 0.0, 0.0 ]
+                    },
+                    "children": [
+                        {
+                        "type": "AnimatedImageWidget", "name": "BallImage",
+                        "fields": {
+                            "filename": "PANEL/HUD_02/minibar/minibar_h",
+                            "useAdvancedColoring": true,
+                            "hsvTransform": [ -0.3333, -0.05, -0.5, 0.0 ]
+                            }
+                        },
+                        {
+                        "type": "TextBoxWidget", "name": "ValueDisplay",
+                        "fields": {
+                            "rect": { "x": 429, "y": 3 }, // 생명력 숫자 위치 "rect": { "x": 229, "y": 3 },
+                            "style": {
+                                "pointSize": "$XMediumFontSize", // _profilehd.json 에서 원하는 폰트사이즈 보시고 변경하세요//// 请检查 _profilehd.json 中的所需字体大小并进行更改。
+                                "fontColor": { "r": 220, "g": 30, "b": 30, "a": 255 }, // 글자 색상
+                                "alignment": { "v": "bottom", "h": "right" },
+                                "spacing" : "$MinimumSpacing",
+                                "dropShadow": {
+                                    "shadowColor": { "r": 0, "g": 0, "b": 0, "a": 220 }, // 글자 테두리 색상//文本边框颜色
+                                    "offset": { "x": 1.9, "y": 1.9 }, // 글자 테두리 범위//文本边框范围
+                                    }
+                                }
+                            }
+                        },
+                        {
+                        "type": "ClickCatcherWidget", "name": "click_catcher",
+                        "fields": {
+                            "rect": { "x": 0, "y": 0, "width": 160, "height": 120 }
+                            }
+                        }
+                    ]
+                },               
+                {
+                "type": "ImageWidget", "name": "miniMbg",
+                "fields": {				
+                    "rect": { "x": 0, "y": 0, "scale": 1.0 },
+                    "filename": "PANEL/HUD_02/minibar/minibar_m_bg"
+                    }
+                },
+                {
+                "type": "AttributeBallWidget", "name": "miniM",
+                "fields": {
+                    "rect": { "x": 0, "y": 30, "width": 150, "height": 87, "scale": 1.0 },
+                    "attribute": "mana",
+                    "minLiquidWidth": 2,
+                    "maxSmoothingSeconds": 1.0,
+                    "jumpSmoothingSeconds": 0.25,
+                    "smoothDecrease": false,
+                    "potionPreviewTransparency": 0.35,
+                    "poisonHsvTransform": [ 0.3, 0.0, 0.0, 0.0 ]
+                    },
+                    "children": [
+                        {
+                        "type": "AnimatedImageWidget", "name": "BallImage",
+                        "fields": {
+                            "filename": "PANEL/HUD_02/minibar/minibar_m",
+                            "useAdvancedColoring": true,
+                            "hsvTransform": [ -0.3333, -0.05, -0.5, 0.0 ]
+                            }
+                        },
+                        {  
+                        "type": "TextBoxWidget", "name": "ValueDisplay",
+                        "fields": {
+                            "rect": { "x": 428, "y": 8 }, // 마나 숫자 위치
+                            "style": {
+                                "pointSize": "$XMediumFontSize", // _profilehd.json 에서 원하는 폰트사이즈 보시고 변경하세요//// 请检查 _profilehd.json 中的所需字体大小并进行更改。
+                                "fontColor": { "r": 57, "g": 140, "b": 255, "a": 255 }, // 글자 색상
+                                "alignment": { "v": "bottom", "h": "right" },
+                                "spacing" : "$MinimumSpacing",
+                                "dropShadow": {
+                                    "shadowColor": { "r": 0, "g": 0, "b": 0, "a": 220 }, // 글자 테두리 색상//// 文本边框颜色
+                                    "offset": { "x": 1.9, "y": 1.9 }, // 글자 테두리 범위//文本边框范围
+                                    }
+                                }
+                            }
+                        },
+                        {
+                            "type": "ClickCatcherWidget", "name": "click_catcher",
+                            "fields": {
+                            "rect": { "x": 0, "y": 0, "width": 160, "height": 100 }
+                            }
+                        }
+                    ]
+                },
+                {
+                "type": "SkillSelectButtonWidget", "name": "ArrowCounter",
+                "fields": {
+                    "rect": { "x": -30, "y": 36 },  // 화살 갯수 위치//箭矢计数位置
+                    "side": "right", // 원거리 스킬 단축키 사용 위치에 따라 left, right 교체해서 사용//根据远程技能快捷键的位置交换左右方向。
+                    },
+                    "children": [
+                        {
+                        "type": "TextBoxWidget", "name": "QuantityText",
+                        "fields": {
+                            "rect": "$SkillHotkeyTextRect",
+                            "style": {
+                                "pointSize": "$XMediumFontSize", // _profilehd.json 에서 원하는 폰트사이즈 보시고 변경하세요// 请检查 _profilehd.json 中的所需字体大小并进行更改
+                                "fontColor": "$FontColorGold", // 글자 색상//文本颜色
+                                "alignment": { "v": "bottom", "h": "center" },
+                                "spacing" : "$MinimumSpacing",
+                                "dropShadow": {
+                                    "shadowColor": { "r": 0, "g": 0, "b": 0, "a": 220 }, // 글자 테두리 색상// 文本边框颜色
+                                    "offset": { "x": 1.9, "y": 1.9 }, // 글자 테두리 범위//文本边框范围
+                                    }
+                                }
+                            }
+                        },
+                    ]
+                },
+            ]
+        }
+        // 미니 HUD 迷你HUD
+
+
+  ]
+}

@@ -1,0 +1,65 @@
+{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/particles/overlays/assassin/fade/vfx_assassin_fade.particles"
+            },
+            {
+                "path": "data/hd/overlays/assassin/fade_icon/fade.particles"
+            }
+        ],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/vfx/textures/distortion/T_FX_cloudy_distortion.texture"
+            }
+        ],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "fade",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 688125222,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "component_vfx",
+                    "filename": "data/hd/vfx/particles/overlays/assassin/fade/vfx_assassin_fade.particles",
+                    "hardKillOnDestroy": true
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 1254384983,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "entity_root_VfxDefinition",
+                    "filename": "data/hd/overlays/assassin/fade_icon/fade.particles",
+                    "hardKillOnDestroy": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 120.0,
+                        "y": 100.0, // 위치 조정은 여기서
+                        "z": 124.0
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}

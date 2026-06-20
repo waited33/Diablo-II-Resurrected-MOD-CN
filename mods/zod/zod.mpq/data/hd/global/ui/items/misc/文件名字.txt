@@ -1,0 +1,4 @@
+body_part  和谐物品
+gem 骷髅石和谐图标
+key 火炬三把钥匙图标
+rune 符文图标

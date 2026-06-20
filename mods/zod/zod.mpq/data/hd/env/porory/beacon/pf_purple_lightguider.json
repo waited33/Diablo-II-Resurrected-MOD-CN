@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "particles": [],
+    "models": [],
+    "skeletons": [],
+    "animations": [],
+    "textures": [],
+    "physics": [],
+    "json": [],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "Prefab",
+  "name": "pf_item_giantcharm",
+  "entities": [
+      
+      //紫色光柱
+      {
+        "type": "Entity","name": "droplight","id": 9999996974,"components": [{"type": "TransformDefinitionComponent","name": "component_transform1",
+        "position":{"x": 9.5,"y": 10.0,"z": 10.0},"orientation":{"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},"scale":{"x": 1.0,"y": 1.0,"z": 1.0},"inheritOnlyPosition": true},{"type": "VfxDefinitionComponent","name": "entity_vfx_nowismdkidea",
+        "filename": "data/hd/vfx/particles/overlays/object/drop_light/light_purple.particles","hardKillOnDestroy": false}]
+      },
+      {
+        "type": "Entity","name": "droplight","id": 9999996974,"components": [{"type": "TransformDefinitionComponent","name": "component_transform1",
+        "position":{"x": 9.5,"y": 12.7,"z": 10},"orientation":{"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},"scale":{"x": 1.0,"y": 1.0,"z": 1.0},"inheritOnlyPosition": true},{"type": "VfxDefinitionComponent","name": "entity_vfx_nowismdkidea",
+        "filename": "data/hd/vfx/particles/overlays/object/drop_light/light_purple.particles","hardKillOnDestroy": false}]
+      },
+      {
+        "type": "Entity","name": "droplight","id": 9999996974,"components": [{"type": "TransformDefinitionComponent","name": "component_transform1",
+        "position":{"x": 9.5,"y": 16.0,"z": 10},"orientation":{"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},"scale":{"x": 1.0,"y": 1.0,"z": 1.0},"inheritOnlyPosition": true},{"type": "VfxDefinitionComponent","name": "entity_vfx_nowismdkidea",
+        "filename": "data/hd/vfx/particles/overlays/object/drop_light/light_purple.particles","hardKillOnDestroy": false}]
+      },
+      {
+        "type": "Entity","name": "droplight","id": 9999996974,"components": [{"type": "TransformDefinitionComponent","name": "component_transform1",
+        "position":{"x": 9.5,"y": 20.0,"z": 10},"orientation":{"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},"scale":{"x": 1.0,"y": 1.0,"z": 1.0},"inheritOnlyPosition": true},{"type": "VfxDefinitionComponent","name": "entity_vfx_nowismdkidea",
+        "filename": "data/hd/vfx/particles/overlays/object/drop_light/light_purple.particles","hardKillOnDestroy": false}]
+      },
+  ]
+}

@@ -1,0 +1,66 @@
+{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/particles/overlays/assassin/bladeshield/vfx_assassin_bladesheild.particles"
+            }
+        ],
+        "models": [
+            {
+                "path": "data/hd/vfx/meshes/fx_mesh_bladeshield.model"
+            }
+        ],
+        "skeletons": [],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/vfx/textures/mask/T_FX_trailgradient_fromleft_mask_01.texture"
+            }
+        ],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "bladeshield",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 3577129933,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "component_vfx",
+                    "filename": "data/hd/vfx/particles/overlays/assassin/bladeshield/vfx_assassin_bladesheild.particles",
+                    "hardKillOnDestroy": true
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 1254384983,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "entity_root_VfxDefinition",
+                    "filename": "data/hd/overlays/assassin/bladeshield_icon/bladeshield.particles",
+                    "hardKillOnDestroy": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 124.0,
+                        "y": 100.0, // 위치 조정은 여기서
+                        "z": 120.0
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}

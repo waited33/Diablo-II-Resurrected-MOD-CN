@@ -1,0 +1,61 @@
+{
+  "dependencies": {
+    "particles": [],
+    "models": [],
+    "skeletons": [],
+    "animations": [],
+    "textures": [],
+    "physics": [],
+    "json": [],
+    "variantdata": [],
+    "objecteffects": [],
+    "other": []
+  },
+  "type": "Prefab",
+  "name": "pf_item_rune",
+  "entities": [
+      
+      //红色光柱
+      {
+        "type": "Entity","name": "droplight","id": 9999996974,"components": [{"type": "TransformDefinitionComponent","name": "component_transform1",
+        "position":{"x": 10.0,"y": 10.0,"z": 10.0},"orientation":{"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},"scale":{"x": 1.0,"y": 1.0,"z": 1.0},"inheritOnlyPosition": true},{"type": "VfxDefinitionComponent","name": "entity_vfx_nowismdkidea",
+        "filename": "data/hd/vfx/particles/overlays/object/drop_light/light_red.particles","hardKillOnDestroy": false}]
+      },
+
+      {
+        "type": "Entity","name": "droplight","id": 9999996974,"components": [{"type": "TransformDefinitionComponent","name": "component_transform1",
+        "position":{"x": 10,"y": 10.3,"z": 10},"orientation":{"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},"scale":{"x": 1.0,"y": 1.0,"z": 1.0},"inheritOnlyPosition": true},{"type": "VfxDefinitionComponent","name": "entity_vfx_nowismdkidea",
+        "filename": "data/hd/vfx/particles/overlays/object/drop_light/light_red.particles","hardKillOnDestroy": false}]
+      },
+      {
+        "type": "Entity","name": "droplight","id": 9999996974,"components": [{"type": "TransformDefinitionComponent","name": "component_transform1",
+        "position":{"x": 10,"y": 10.6,"z": 10},"orientation":{"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},"scale":{"x": 1.0,"y": 1.0,"z": 1.0},"inheritOnlyPosition": true},{"type": "VfxDefinitionComponent","name": "entity_vfx_nowismdkidea",
+        "filename": "data/hd/vfx/particles/overlays/object/drop_light/light_red.particles","hardKillOnDestroy": false}]
+      },
+      {
+        "type": "Entity","name": "droplight","id": 9999996974,"components": [{"type": "TransformDefinitionComponent","name": "component_transform1",
+        "position":{"x": 10,"y": 15.0,"z": 10},"orientation":{"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},"scale":{"x": 1.0,"y": 1.0,"z": 1.0},"inheritOnlyPosition": true},{"type": "VfxDefinitionComponent","name": "entity_vfx_nowismdkidea",
+        "filename": "data/hd/vfx/particles/overlays/object/drop_light/light_red.particles","hardKillOnDestroy": false}]
+      },
+      {
+        "type": "Entity","name": "droplight","id": 9999996974,"components": [{"type": "TransformDefinitionComponent","name": "component_transform1",
+        "position":{"x": 10,"y": 20.0,"z": 10},"orientation":{"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},"scale":{"x": 1.0,"y": 1.0,"z": 1.0},"inheritOnlyPosition": true},{"type": "VfxDefinitionComponent","name": "entity_vfx_nowismdkidea",
+        "filename": "data/hd/vfx/particles/overlays/object/drop_light/light_red.particles","hardKillOnDestroy": false}]
+      },
+      {
+        "type": "Entity","name": "droplight","id": 9999996974,"components": [{"type": "TransformDefinitionComponent","name": "component_transform1",
+        "position":{"x": 10,"y": 25.0,"z": 10},"orientation":{"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},"scale":{"x": 1.0,"y": 1.0,"z": 1.0},"inheritOnlyPosition": true},{"type": "VfxDefinitionComponent","name": "entity_vfx_nowismdkidea",
+        "filename": "data/hd/vfx/particles/overlays/object/drop_light/light_red.particles","hardKillOnDestroy": false}]
+      },
+      {
+        "type": "Entity","name": "droplight","id": 9999996974,"components": [{"type": "TransformDefinitionComponent","name": "component_transform1",
+        "position":{"x": 10,"y": 30.0,"z": 10},"orientation":{"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},"scale":{"x": 1.0,"y": 1.0,"z": 1.0},"inheritOnlyPosition": true},{"type": "VfxDefinitionComponent","name": "entity_vfx_nowismdkidea",
+        "filename": "data/hd/vfx/particles/overlays/object/drop_light/light_red.particles","hardKillOnDestroy": false}]
+      },
+      {
+        "type": "Entity","name": "droplight","id": 9999996974,"components": [{"type": "TransformDefinitionComponent","name": "component_transform1",
+        "position":{"x": 10,"y": 35.0,"z": 10},"orientation":{"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},"scale":{"x": 1.0,"y": 1.0,"z": 1.0},"inheritOnlyPosition": true},{"type": "VfxDefinitionComponent","name": "entity_vfx_nowismdkidea",
+        "filename": "data/hd/vfx/particles/overlays/object/drop_light/light_red.particles","hardKillOnDestroy": false}]
+      },    
+  ]
+}

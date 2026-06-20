@@ -1,0 +1,49 @@
+{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/particles/missiles/engorge/vfx_demon_engorgeState.particles"
+            }
+        ],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/vfx/textures/default/default_NRM.texture"
+            }
+        ],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "engorgestate",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 498020498,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "entity_root_VfxDefinition",
+                    "filename": "data/hd/overlays/warlock/engorge_icon/engorge.particles",
+                    "hardKillOnDestroy": false
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 125.15,
+                        "y": 101.9, // 위치 조정은 여기서
+                        "z": 118.85
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}

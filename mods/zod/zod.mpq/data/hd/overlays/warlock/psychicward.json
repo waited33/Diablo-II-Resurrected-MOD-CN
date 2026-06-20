@@ -1,0 +1,65 @@
+{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/particles/overlays/warlock/psychic_ward/psychic_ward_Overlay.particles"
+            },
+            {
+                "path": "data/hd/overlays/warlock/psychicward_icon/psychicward.particles"
+            }
+        ],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/vfx/textures/gradient/FX_T_gradientMap_Eldritch_01.texture"
+            }
+        ],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "psychicward",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 1896022596,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "entity_root_VfxDefinition",
+                    "filename": "data/hd/vfx/particles/overlays/warlock/psychic_ward/psychic_ward_Overlay.particles",
+                    "hardKillOnDestroy": false
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 1896022596,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "entity_root_VfxDefinition",
+                    "filename": "data/hd/overlays/warlock/psychicward_icon/psychicward.particles",
+                    "hardKillOnDestroy": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 124.0,
+                        "y": 105.7, // 위치 조정은 여기서
+                        "z": 120.0
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}

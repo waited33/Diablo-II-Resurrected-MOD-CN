@@ -1,0 +1,6 @@
+- act_3_dungeon_down.json
+- act_3_jungle_to_dungeon_fort.json
+- act_3_kurast_to_temple.json
+- act_3_mephisto_down_l.json
+- act_3_mephisto_down_r.json
+- act_3_travincal_to_mephisto.json

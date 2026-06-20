@@ -1,0 +1,131 @@
+{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/particles/overlays/common/shrine_experience/vfx_shrine_experience_looping.particles"
+            }
+        ],
+        "models": [
+        ],
+        "skeletons": [
+        ],
+        "animations": [
+        ],
+        "textures": [
+        ],
+        "physics": [
+        ],
+        "json": [
+        ],
+        "variantdata": [
+        ],
+        "objecteffects": [
+        ],
+        "other": [
+        ]
+    },
+    "type": "OverlayDefinition",
+    "name": "shrine_experience",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 2064404087,
+            "components": [
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 0.0,
+                        "y": 14.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                },
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "entity_root_VfxDefinition",
+                    "filename": "data/hd/vfx/particles/overlays/common/shrine_experience/vfx_shrine_experience_looping.particles",
+                    "hardKillOnDestroy": true
+                }
+            ]
+        },
+		/*
+		{
+			"type": "Entity",
+			"name": "SFX_Waypoint",
+			"id": 6000009541,//经验神社的环境音效
+			"components": [
+				{
+					"type": "AudioEmitterComponent",
+					"name": "SFX_Waypoint_AudioEmitter",
+					"audioId": "mdkmod_shrine_gem",
+					"randomDelay": {"x": 0.0,"y": 0.0},
+					"forceNoRandom": true
+				},
+				{
+					"type": "TransformDefinitionComponent",
+					"name": "SFX_Waypoint_TransformDefinition",
+					"position": {"x": 0.0,"y": 0.0,"z": 0.0},
+					"orientation": {"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},
+					"scale": {"x": 1.0,"y": 1.0,"z": 1.0},
+					"inheritOnlyPosition": false
+				}
+			]
+		},
+		*/
+		{
+			"type": "Entity",
+			"name": "light",
+			"id": 698403692,//经验神社头顶的 Horadric 闪光效果
+			"components": [
+				{
+					"type": "TransformDefinitionComponent",
+					"name": "FireRight_TransformDefinition",
+					"position": {"x": 0.0,"y": 15.0,"z": 0.0},
+					"orientation": {"x": 0.0,"y": 0.0,"z": 0.0,"w": 1.0},
+					"scale": {"x": 1.0,"y": 1.0,"z": 1.0},
+					"inheritOnlyPosition": true
+				},
+				{
+					"type": "VfxDefinitionComponent",
+					"name": "FireRight_VfxDefinition",
+					"filename": "data/hd/vfx/particles/overlays/object/horadric_light/fx_horadric_light.particles",
+					"hardKillOnDestroy": true
+				}
+			]
+		},
+        //光圈导航
+		{
+		  "type": "Entity",
+		  "name": "pf_beacon_chest",
+		  "id": 586091854,
+		  "components": [
+			{
+			  "type": "TransformDefinitionComponent",
+			  "name": "prefab_TransformDefinitionComponent",
+			  "position": { "x": 0.0, "y": 35.0, "z": 0.0 },
+			  "orientation": { "x": 0.0, "y": 0.0, "z": 0.0, "w": 1.0 },
+			  "scale": { "x": 0.6, "y": 25.0, "z": 0.6 },
+			  "inheritOnlyPosition": false
+			},
+			{
+			  "type": "PrefabPlacementDefinitionComponent",
+			  "name": "prefab_PrefabPlacementDefinitionComponent",
+			  "prefab": "data/hd/env/porory/beacon/pf_beacon_experience.json"
+			}
+		  ]
+		}
+    ]
+}

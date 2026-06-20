@@ -1,0 +1,86 @@
+{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/particles/overlays/assassin/venomclaws/fx_venomclaws.particles"
+            },
+            {
+                "path": "data/hd/overlays/assassin/venomclaws_icon/venomclaws.particles"
+            }
+        ],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/vfx/textures/default/Default_AlphaMap.texture"
+            }
+        ],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "venomclaws",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 1241758391,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "entity_root_VfxDefinition",
+                    "filename": "data/hd/vfx/particles/overlays/assassin/venomclaws/fx_venomclaws.particles",
+                    "hardKillOnDestroy": false
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 0.0,
+                        "y": 4.0,
+                        "z": 0.0
+                    },
+                    "orientation": {
+                        "x": 0.0,
+                        "y": 0.0,
+                        "z": 0.0,
+                        "w": 1.0
+                    },
+                    "scale": {
+                        "x": 1.0,
+                        "y": 1.0,
+                        "z": 1.0
+                    },
+                    "inheritOnlyPosition": false
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 1254384983,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "entity_root_VfxDefinition",
+                    "filename": "data/hd/overlays/assassin/venomclaws_icon/venomclaws.particles",
+                    "hardKillOnDestroy": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 124.0,
+                        "y": 101.9, // 위치 조정은 여기서
+                        "z": 120.0
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}

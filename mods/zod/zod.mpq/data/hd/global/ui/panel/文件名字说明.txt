@@ -1,0 +1,4 @@
+Horadric_Cube    盒子图标
+HUD       迷你属性图标
+hud_02   经验图标/血球沸腾
+message   百科盒子图标

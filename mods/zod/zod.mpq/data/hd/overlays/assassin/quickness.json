@@ -1,0 +1,65 @@
+{
+    "dependencies": {
+        "particles": [
+            {
+                "path": "data/hd/vfx/particles/overlays/assassin/quickness/vfx_assassin_quickness.particles"
+            },
+            {
+                "path": "data/hd/overlays/assassin/quickness_icon/quickness.particles"
+            }
+        ],
+        "models": [],
+        "skeletons": [],
+        "animations": [],
+        "textures": [
+            {
+                "path": "data/hd/vfx/textures/distortion/T_FX_cloudy_distortion.texture"
+            }
+        ],
+        "physics": [],
+        "json": [],
+        "variantdata": [],
+        "objecteffects": [],
+        "other": []
+    },
+    "type": "OverlayDefinition",
+    "name": "quickness",
+    "entities": [
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 992020576,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "component_vfx",
+                    "filename": "data/hd/vfx/particles/overlays/assassin/quickness/vfx_assassin_quickness.particles",
+                    "hardKillOnDestroy": true
+                }
+            ]
+        },
+        {
+            "type": "Entity",
+            "name": "entity_root",
+            "id": 1254384983,
+            "components": [
+                {
+                    "type": "VfxDefinitionComponent",
+                    "name": "entity_root_VfxDefinition",
+                    "filename": "data/hd/overlays/assassin/quickness_icon/quickness.particles",
+                    "hardKillOnDestroy": true
+                },
+                {
+                    "type": "TransformDefinitionComponent",
+                    "name": "entity_root_TransformDefinition",
+                    "position": {
+                        "x": 120.0,
+                        "y": 100.0, // 위치 조정은 여기서
+                        "z": 124.0
+                    },
+                    "inheritOnlyPosition": true
+                }
+            ]
+        }
+    ]
+}
